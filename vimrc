@@ -195,6 +195,19 @@ endif
 :autocmd FileType c     set cindent
 ":autocmd FileType perl  :iabbrev iff if( )<left>
 
+
+" ruby better use 2 space
+:autocmd FileType ruby  set tabstop=2
+:autocmd FileType ruby  set shiftwidth=2
+:autocmd FileType ruby  set softtabstop=2
+
+" html
+:autocmd FileType html set tabstop=2
+:autocmd FileType html set shiftwidth=2
+:autocmd FileType html set softtabstop=2
+
+
+
 :iabbrev @@ aka.why
 
 "grep! is better than grep, shellescape to escape shell special chars

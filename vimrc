@@ -106,6 +106,8 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'bling/vim-airline'
 :nnoremap <F5> :AirlineToggle<CR>
 
+Bundle 'tpope/vim-rails'
+
 filetype plugin indent on     " required!
 "
 " Brief help

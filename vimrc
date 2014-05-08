@@ -42,6 +42,9 @@ Bundle 'majutsushi/tagbar'
 "
 Bundle 'mileszs/ack.vim'
 
+" enable . repeat for surround
+Bundle 'tpope/vim-repeat'
+
 " surround change
 " cs'"    : change ' to "
 " cs'<q>  : change ' to <q>
@@ -98,17 +101,12 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 :nnoremap <F7> :NERDTreeToggle<CR>
 
-Bundle 'fholgado/minibufexpl.vim'
-
-:nnoremap <F6> :MBEToggle<CR>
-"
-":nnoremap <C-TAB>   :MBEbn<CR>
-":nnoremap <C-S-TAB> :MBEbp<CR>
-
 Bundle 'kchmck/vim-coffee-script'
 
 Bundle 'bling/vim-airline'
 :nnoremap <F5> :AirlineToggle<CR>
+
+Bundle 'tpope/vim-rails'
 
 filetype plugin indent on     " required!
 "
@@ -127,6 +125,7 @@ filetype plugin indent on     " required!
 
 
 " common settings
+syntax on
 set nu
 set ruler  
 set tabstop=4
@@ -153,7 +152,7 @@ set fdls=99
 
 " for cscope
 if has("cscope")
-    set csprg=/bin/cscope
+    set csprg=/usr/bin/cscope
     set csto=0
     set cst
     set nocsverb
@@ -191,9 +190,21 @@ endif
 
 :let mapleader = "\\"
 
-":autocmd FileType c     :iabbrev iff if( )<left>
+" avoid #
 :autocmd FileType c     set cindent
-":autocmd FileType perl  :iabbrev iff if( )<left>
+
+" ruby better use 2 space
+:autocmd FileType ruby  set tabstop=2
+:autocmd FileType ruby  set shiftwidth=2
+:autocmd FileType ruby  set softtabstop=2
+
+:autocmd FileType html set tabstop=2
+:autocmd FileType html set shiftwidth=2
+:autocmd FileType html set softtabstop=2
+
+:autocmd FileType coffee set tabstop=2
+:autocmd FileType coffee set shiftwidth=2
+:autocmd FileType coffee set softtabstop=2
 
 :iabbrev @@ aka.why
 

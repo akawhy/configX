@@ -202,6 +202,10 @@ endif
 :autocmd FileType html set shiftwidth=2
 :autocmd FileType html set softtabstop=2
 
+:autocmd FileType eruby set tabstop=2
+:autocmd FileType eruby set shiftwidth=2
+:autocmd FileType eruby set softtabstop=2
+
 :autocmd FileType coffee set tabstop=2
 :autocmd FileType coffee set shiftwidth=2
 :autocmd FileType coffee set softtabstop=2

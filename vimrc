@@ -4,46 +4,46 @@ set sessionoptions-=options
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-" BundleInstall to install plugins
-Bundle 'gmarik/vundle'
+" PluginInstall to install plugins
+Plugin 'gmarik/vundle'
 
-" My Bundles here:
+" My Plugins here:
 "
 " original repos on github
-" Bundle 'tpope/vim-fugitive'
-" Bundle 'Lokaltog/vim-easymotion'
-" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Bundle 'tpope/vim-rails.git'
+" Plugin 'tpope/vim-fugitive'
+" Plugin 'Lokaltog/vim-easymotion'
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Plugin 'tpope/vim-rails.git'
 " vim-scripts repos
-" Bundle 'L9'
-" Bundle 'FuzzyFinder'
+" Plugin 'L9'
+" Plugin 'FuzzyFinder'
 " non github repos
-" Bundle 'git://git.wincent.com/command-t.git'
+" Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (ie. when working on your own plugin)
-" Bundle 'file:///Users/gmarik/path/to/plugin'
+" Plugin 'file:///Users/gmarik/path/to/plugin'
 " ...
 
 " split plugin
 " usage: gS to split and use gJ to merge, GREAT
-Bundle 'AndrewRadev/splitjoin.vim'
+Plugin 'AndrewRadev/splitjoin.vim'
 
 " tag plugin, instead of Taglist
-Bundle 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
 ":map  <F9>  :TlistToggle<CR>
 :nnoremap <F9> :TagbarToggle<CR>
 
 " ack plugin;)
 " :Ack [options] {pattern} [{directory}]
 "
-Bundle 'mileszs/ack.vim'
+Plugin 'mileszs/ack.vim'
 
 " enable . repeat for surround
-Bundle 'tpope/vim-repeat'
+Plugin 'tpope/vim-repeat'
 
 " surround change
 " cs'"    : change ' to "
@@ -52,7 +52,7 @@ Bundle 'tpope/vim-repeat'
 " ysiw'   : add ' (ys mean add, iw mean a word)
 " yss"    : add entire line with " (s mean whole line)
 " cs'[    : '[' contain space and ']' don't contain space
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 
 " great for write xml/html/rails/jsp/php
 " mapping
@@ -91,33 +91,33 @@ Bundle 'tpope/vim-surround'
 "                                                *ragtag-CTRL-X_&*
 "<Plug>ragtagXmlEncode   Toggle a mode that automatically XML encodes unsafe
 "<C-X>&                  characters.
-Bundle 'ragtag.vim'
+Plugin 'ragtag.vim'
 let g:ragtag_global_maps = 1
 
 " file management
 " <C-p> to startup
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 :nnoremap <F7> :NERDTreeToggle<CR>
 
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
 
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 :nnoremap <F5> :AirlineToggle<CR>
 
-Bundle 'tpope/vim-rails'
+Plugin 'tpope/vim-rails'
 
 filetype plugin indent on     " required!
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured bundles
+" :PluginInstall(!)    - install(update) bundles
+" :PluginSearch(!) foo - search(or refresh cache first) for foo
+" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" NOTE: comments after Plugin command are not allowed..
 
 """ vundle end }}}
 

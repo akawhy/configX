@@ -108,6 +108,8 @@ Plugin 'bling/vim-airline'
 
 Plugin 'tpope/vim-rails'
 
+Plugin 'elixir-lang/vim-elixir'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -243,3 +245,6 @@ endif
 ":nnoremap <C-A-5> 5gt<cr>
 
 set pastetoggle=<F8>
+
+" charactor encoding settings
+set fileencodings=ucs-bom,utf-8,gbk,latin1

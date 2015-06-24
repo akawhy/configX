@@ -233,6 +233,7 @@ endif
 :nnoremap <leader><C-b> :!bash -n %<cr>
 :nnoremap <leader><C-r> :!ruby -c %<cr>
 :nnoremap <leader><C-l> :!luac -p %<cr>
+:nnoremap <leader><C-y> :!python -m py_compile %<cr>
 
 :nnoremap <leader>ev :vsp  $MYVIMRC<cr>
 :nnoremap <leader>sv :so   $MYVIMRC<cr>

@@ -249,3 +249,6 @@ set pastetoggle=<F8>
 
 " charactor encoding settings
 set fileencodings=ucs-bom,utf-8,gbk,latin1
+
+" some other settings
+au BufRead,BufNewFile Rexfile set filetype=perl

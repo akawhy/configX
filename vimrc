@@ -10,7 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle
 " required! 
 " PluginInstall to install plugins
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " My Plugins here:
 "
@@ -251,4 +251,13 @@ set pastetoggle=<F8>
 set fileencodings=ucs-bom,utf-8,gbk,latin1
 
 " some other settings
+au BufRead,BufNewFile *.thrift set filetype=thrift
 au BufRead,BufNewFile Rexfile set filetype=perl
+au BufRead,BufNewFile *.rl set filetype=ragel
+au BufRead,BufNewFile *.go set filetype=go
+
+"au! Syntax thrift source ~/.vim/thrift.vim
+"au! Syntax ragel  source ~/.vim/ragel.vim
+"au! Syntax go     source ~/.vim/go.vim
+
+"au VimEnter * redraw!

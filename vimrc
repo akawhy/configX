@@ -260,4 +260,7 @@ au BufRead,BufNewFile *.go set filetype=go
 "au! Syntax ragel  source ~/.vim/ragel.vim
 "au! Syntax go     source ~/.vim/go.vim
 
+" search for select text
+vnoremap // y/<C-R>"<CR>
+
 "au VimEnter * redraw!

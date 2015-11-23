@@ -91,7 +91,7 @@ Plugin 'tpope/vim-surround'
 "                                                *ragtag-CTRL-X_&*
 "<Plug>ragtagXmlEncode   Toggle a mode that automatically XML encodes unsafe
 "<C-X>&                  characters.
-Plugin 'ragtag.vim'
+Plugin 'tpope/vim-ragtag'
 let g:ragtag_global_maps = 1
 
 " file management
@@ -101,14 +101,13 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 :nnoremap <F7> :NERDTreeToggle<CR>
 
-Plugin 'kchmck/vim-coffee-script'
-
 Plugin 'bling/vim-airline'
 :nnoremap <F5> :AirlineToggle<CR>
 
 Plugin 'tpope/vim-rails'
 
-Plugin 'elixir-lang/vim-elixir'
+"Plugin 'kchmck/vim-coffee-script'
+"Plugin 'elixir-lang/vim-elixir'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

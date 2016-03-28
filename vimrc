@@ -109,6 +109,10 @@ Plugin 'tpope/vim-rails'
 "Plugin 'kchmck/vim-coffee-script'
 "Plugin 'elixir-lang/vim-elixir'
 
+" you should install godef first
+" usage: gd
+Plugin 'dgryski/vim-godef'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

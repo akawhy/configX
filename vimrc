@@ -112,6 +112,8 @@ Plugin 'tpope/vim-rails'
 " you should install godef first
 " usage: gd
 Plugin 'dgryski/vim-godef'
+let g:godef_split=2
+let g:godef_same_file_in_same_window=1
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

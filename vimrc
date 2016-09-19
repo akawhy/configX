@@ -219,6 +219,12 @@ endif
 :autocmd FileType coffee set shiftwidth=2
 :autocmd FileType coffee set softtabstop=2
 
+:autocmd FileType python set tabstop=4
+:autocmd FileType python set shiftwidth=4
+:autocmd FileType python set softtabstop=4
+:autocmd FileType python set expandtab
+:autocmd FileType python set smarttab
+
 :iabbrev @@ aka.why
 
 "grep! is better than grep, shellescape to escape shell special chars
@@ -260,10 +266,13 @@ au BufRead,BufNewFile *.thrift set filetype=thrift
 au BufRead,BufNewFile Rexfile set filetype=perl
 au BufRead,BufNewFile *.rl set filetype=ragel
 au BufRead,BufNewFile *.go set filetype=go
+au BufRead,BufNewFile *.md set filetype=markdown
 
-"au! Syntax thrift source ~/.vim/thrift.vim
-"au! Syntax ragel  source ~/.vim/ragel.vim
-"au! Syntax go     source ~/.vim/go.vim
+au! Syntax thrift source ~/.vim/thrift.vim
+au! Syntax ragel  source ~/.vim/ragel.vim
+au! Syntax go     source ~/.vim/go.vim
+
+:colorscheme desert
 
 " search for select text
 vnoremap // y/<C-R>"<CR>
